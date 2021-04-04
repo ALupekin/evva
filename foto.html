@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>ПОРТФОЛИО</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/style_tab.css">  
+  
+</head>
+<body>
+   <header class="header">
+       <div class="wa">
+           <div class="mess" id="con1"><a href="https://wa.me/79955089203"   title="Буду рада увидеть ваше сообщение в WhatApp">WhatApp </a> </div>
+           <div class="mess" id="con2" ><a href="mailto:Eva.evgesha.antonova@mail.ru"  title="Буду рада увидеть ваше сообщение Email">Email <div class="mess"></div></a> </div></div>
+       
+       <div class="title">10bit</div>
+    <nav class="menu">
+       <ul class="menu-list">
+        <li class="menu-item"><a href="index.html">главная</a></li>
+        <li class="menu-item"><a href="cont.html">контакты</a></li>
+         <li class="menu-item"><a href="price.html">услуги</a></li>  
+         <li class="menu-item"><a href="foto.html">портфолио</a></li>  
+      </ul>
+    </nav>
+    </header> 
+  
+
+
+
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade"> <div class="numbertext">1 / 21</div><img src="img/1.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">2 / 21</div><img src="img/2.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">3 / 21</div><img src="img/3.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">4 / 21</div><img src="img/4.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">5 / 21</div><img src="img/5.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">6 / 21</div><img src="img/6.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">7 / 21</div><img src="img/7.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">8 / 21</div><img src="img/8.jpg" style="width:100%"></div>
+  <div class="mySlides fade"> <div class="numbertext">9 / 21</div><img src="img/22.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">10 / 21</div><img src="img/23.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">11 / 21</div><img src="img/26.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">12 / 21</div><img src="img/12.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">13 / 21</div><img src="img/29.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">14 / 21</div><img src="img/14.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">15 / 21</div><img src="img/30.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">16 / 21</div><img src="img/16.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">17 / 21</div><img src="img/17.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">18 / 21</div><img src="img/18.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">19 / 21</div><img src="img/19.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">20 / 21</div><img src="img/33.jpg" style="width:100%"></div>
+  <div class="mySlides fade"><div class="numbertext">21 / 21</div><img src="img/21.jpg" style="width:100%"></div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    
+    <script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+  
+  
+  
+  
+  </script>
+    </body>
+</html>

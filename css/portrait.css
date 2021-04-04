@@ -1,0 +1,12 @@
+@media(screen) and (orientation:portrait){
+    .all{
+        position: relative;
+    }
+    .foto{
+        position: absolute;
+        z-index: 5;
+        width: 30vw;
+    }   
+    
+    
+}
