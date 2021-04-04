@@ -636,16 +636,88 @@ height: 70%;
 }
 .form{
   display: flex;
-  width: 50vh;
+width: 500px;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
-
-.form-textarea textarea{
-  width: 70%;
+.none-input{
+   width: 33vw;
+}
+.form-textarea{
+  width: 33vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.text-input-tel{
+  margin-bottom: 20px;
+  width: 33vw;
+}
+.text-input-name{
+    margin-bottom: 20px;
+  width: 33vw;
+}
+.form p{
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Lobster-Regular";
+}
+@media(min-width: 1100px) and (max-width: 1300px){
+  .form{
+    
+  }
+  .none-input{
+    width: 37vw;
+  }
+  .form-textarea{
+    width: 37vw;
+  }
+  .text-input-tel{
+    width: 37vw;
+  }
+  .text-input-name{
+    width: 37vw;
+  }
+}
+
+@media(min-width: 1000px) and (max-width: 1099px){
+  .form{
+    
+  }
+  .none-input{ width: 43vw;}
+  .form-textarea{ width: 43vw;}
+  .text-input-tel{ width: 43vw;}
+  .text-input-name{ width: 43vw;}  
+}
+@media(min-width: 800px) and (max-width: 999px){
+  .form{
+    
+  }
+  .none-input{ width: 53vw;}
+  .form-textarea{ width: 53vw;}
+  .text-input-tel{ width: 53vw;}
+  .text-input-name{ width: 53vw;}  
+}
+
+@media(min-width: 600px) and (max-width: 799px){
+  .form{
+    
+  }
+  .none-input{ width: 70vw;}
+  .form-textarea{ width: 70vw;}
+  .text-input-tel{ width: 70vw;}
+  .text-input-name{ width: 70vw;}  
+}
+@media(min-width: 320px) and (max-width: 599px){
+  .form{
+    
+  }
+  .none-input{ width: 90vw;}
+  .form-textarea{ width: 90vw;}
+  .text-input-tel{ width: 90vw;}
+  .text-input-name{ width: 90vw;}  
 }
