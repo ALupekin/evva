@@ -13,6 +13,7 @@
 
 body{    
   background-image: url(../img/fon2.jpeg);
+  background-repeat: no-repeat;
   background-color: black;
   background-size: 100%;   
 }
