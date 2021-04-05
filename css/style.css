@@ -27,8 +27,22 @@ body{
   position: absolute;
   padding: 25px;
   z-index: 3;
-  width: 200px; 
+ 
 }
+.wal{
+  display: flex;
+  width: 30vw;
+  position: fixed;
+  z-index: 13;
+  margin-left: 3vw
+
+}
+.mes img{
+  width: 60px;
+  height: 60px;
+margin: 15px
+}
+
 
 .wa_cont{
   display: block;
@@ -67,10 +81,11 @@ body{
   background:      -o-linear-gradient(top, #000000 0%, #4c4e5a 30%, #000000 100%);
   background:     -ms-linear-gradient(top, #000000 0%, #4c4e5a 30%, #000000 100%);
   background:         linear-gradient(top, #000000 0%, #4c4e5a 30%, #000000 100%);
-  padding: 10px;
+
   border-radius: 20px;
   opacity: 0.5;
 }
+
 
 .title{
   font-size: 150px;
@@ -168,11 +183,7 @@ main p{
   margin-bottom: 50px;
 }
 
-.photo-item:nth-child(5n + 2){  margin-top: 40px}
-.photo-item:nth-child(5n + 3){margin-top: 80px}
-.photo-item:nth-child(5n + 4){margin-top: 120px}
-.photo-item:nth-child(5n + 5){margin-top: 160px}
-.photo-item:nth-child(5n + 1){padding-left: 130p}
+
 
 
 
@@ -246,6 +257,28 @@ main p{
   background-size: 13%;
   background-position: right 
 }
+#cont5{
+
+  background-image: url(../svg/VK-Icon_33969.png);
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position: right 
+}
+#cont6{
+
+  background-image: url(../svg/instagram_ig_logo_icon_181651.png);
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position: right 
+}
+#cont7{
+
+  background-image: url(../svg/Content.png);
+  background-repeat: no-repeat;
+  background-size: 13%;
+  background-position: right 
+}
+
 #con1{
  background-image: url(../svg/Whatsapp-Icon_33936.png);
   background-repeat: no-repeat;
@@ -258,16 +291,19 @@ main p{
   background-size: 28%;
   background-position: right 
 }
-#con2:hover{
-  background-image: url(../svg/Email-Icon_33999.png);
+#con3{
+  background-image: url(../svg/instagram_ig_logo_icon_181651.png);
   background-repeat: no-repeat;
   background-size: 28%;
-
-
-
-
+  background-position: right 
 }
 
+#con4{
+  background-image: url(../svg/VK-Icon_33969.png);
+  background-repeat: no-repeat;
+  background-size: 28%;
+  background-position: right 
+}
 .otv {
   color: mediumvioletred;
   border-top: 2px solid blue;
@@ -492,21 +528,21 @@ a {
 height: 70%;
   position: relative;
   margin: auto;
-  margin-top: 0px
+  margin-top: 110px
 }
 @media(min-width: 1000px) and (max-width: 1100px){
   .slideshow-container {
-      margin-top: 80px
+      margin-top: 130px
   }
 }
 @media(min-width: 750px) and (max-width: 999px){
   .slideshow-container {
-      margin-top: 100px
+      margin-top: 170px
   }
 }
 @media(min-width: 0px) and (max-width: 749px){
   .slideshow-container {
-      margin-top: 150px
+      margin-top: 190px
   }
 }
 /* Hide the images by default */
@@ -671,53 +707,123 @@ width: 500px;
     
   }
   .none-input{
-    width: 37vw;
+    width: 47vw;
   }
   .form-textarea{
-    width: 37vw;
+    width: 47vw;
   }
   .text-input-tel{
-    width: 37vw;
+    width: 47vw;
   }
   .text-input-name{
-    width: 37vw;
+    width: 47vw;
   }
 }
 
 @media(min-width: 1000px) and (max-width: 1099px){
-  .form{
-    
-  }
-  .none-input{ width: 43vw;}
-  .form-textarea{ width: 43vw;}
-  .text-input-tel{ width: 43vw;}
-  .text-input-name{ width: 43vw;}  
-}
-@media(min-width: 800px) and (max-width: 999px){
-  .form{
-    
-  }
-  .none-input{ width: 53vw;}
-  .form-textarea{ width: 53vw;}
-  .text-input-tel{ width: 53vw;}
-  .text-input-name{ width: 53vw;}  
-}
-
-@media(min-width: 600px) and (max-width: 799px){
-  .form{
-    
-  }
+  .form{ width: 70%; }
   .none-input{ width: 70vw;}
   .form-textarea{ width: 70vw;}
   .text-input-tel{ width: 70vw;}
   .text-input-name{ width: 70vw;}  
 }
+@media(min-width: 800px) and (max-width: 999px){
+.form{ width: 85%; }
+  .none-input{ width: 85vw;}
+  .form-textarea{ width: 85vw;}
+  .text-input-tel{ width: 85vw;}
+  .text-input-name{ width: 85vw;}  
+}
+
+@media(min-width: 600px) and (max-width: 799px){
+.form{ width: 88%; }
+  .none-input{ width: 88vw;}
+  .form-textarea{ width: 88vw;}
+  .text-input-tel{ width: 88vw;}
+  .text-input-name{ width: 88vw;} 
+}
 @media(min-width: 320px) and (max-width: 599px){
-  .form{
-    
-  }
+  .form{ }
   .none-input{ width: 90vw;}
   .form-textarea{ width: 90vw;}
   .text-input-tel{ width: 90vw;}
   .text-input-name{ width: 90vw;}  
 }
+.text_photo{
+  color: aliceblue;
+ font-family: "Lobster-Regular";
+padding-left: 5vw
+}
+#text1{
+  padding-left: 2vw;
+}
+#text2{
+  padding-left: 5vw;
+}
+#text3{
+  padding-left: 8vw
+}
+.text_tel1{
+  padding-left: 18vw;
+}
+.text_tel2{
+  padding-left: 35vw;
+}
+.text_tel1 a:hover{
+  color: blue;
+  transition: 1s
+}
+
+
+.text_tel2 a:hover{
+  color: blue;
+  transition: 1s
+}
+.popap{
+ width: 100%;
+  height: 100%;
+}
+.popap_sh{
+   position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 8;
+}
+
+.popap_area{
+  font-family: "Lobster-Regular";
+  position: absolute;
+  display: block;
+  margin-top: 50px;
+  width: 100%;
+  height: 86%;
+  background-color: black;
+  padding-left: 50px;
+  padding-top: 50px;
+  z-index: 15;
+  opacity: 0.7;
+
+  border: 3px solid grey;
+  border-radius: 40px
+}
+.popap_block{
+position: absolute;
+  width: 81%;
+  height: 80%;
+  margin-left: 9.5%;
+  z-index: 10;
+}
+.graf{
+  font-family: "Lobster-Regular";
+  font-size: 40px;
+  color: aliceblue;
+  padding-bottom: 53px;
+  
+}
+.graf:nth-child(1){
+  margin-top: -25px;
+}
+
+
